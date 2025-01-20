@@ -1,5 +1,5 @@
 <script>
-    // You can add any JavaScript logic here if needed
+    // Javascript here
 </script>
 
 <style>

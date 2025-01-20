@@ -1,40 +1,35 @@
-
 <script>
-    let darkMode = false;
-
-    function toggleDarkMode() {
-        darkMode = !darkMode;
-        document.documentElement.classList.toggle('dark', darkMode);
-    }
+    // Add any page-specific logic here if needed
 </script>
 
-<button 
-    on:click={toggleDarkMode} 
-    class="fixed top-4 right-4 bg-gray-800 text-white p-2 rounded"
->
-    Toggle Dark Mode
-</button>
-
-<style>
-    :global(.dark) {
-        --bg-color: #1a202c;
-        --text-color: #a0aec0;
-    }
-
-    :global(body) {
-        background-color: var(--bg-color, white);
-        color: var(--text-color, black);
-    }
-
-    nav {
-        background-color: var(--bg-color, #2d3748);
-    }
-
-    a {
-        color: var(--text-color, white);
-    }
-
-    .bg-gradient {
-        background: linear-gradient(to right, #2d3748, #4a5568);
-    }
-</style>
+<main class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
+    <h1 class="text-4xl font-bold mb-4 text-center">
+        Welcome to <span class="text-green-400">Soccer Analyzer</span>
+    </h1>
+    <p class="text-lg mb-8 text-gray-300 text-center max-w-prose">
+        Analyze your favorite player, team performance, and match outcomes in a beautiful, user-friendly interface.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <a
+            href="/players"
+            class="block p-6 bg-gray-700 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 text-center"
+        >
+            <h2 class="text-2xl font-semibold">Players</h2>
+            <p class="mt-2 text-gray-200">Explore detailed player statistics and insights.</p>
+        </a>
+        <a
+            href="/teams"
+            class="block p-6 bg-gray-700 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 text-center"
+        >
+            <h2 class="text-2xl font-semibold">Teams</h2>
+            <p class="mt-2 text-gray-200">Compare team performance across matches and leagues.</p>
+        </a>
+        <a
+            href="/matches"
+            class="block p-6 bg-gray-700 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 text-center"
+        >
+            <h2 class="text-2xl font-semibold">Matches</h2>
+            <p class="mt-2 text-gray-200">Analyze match outcomes and strategies.</p>
+        </a>
+    </div>
+</main>
