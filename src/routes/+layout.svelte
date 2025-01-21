@@ -1,6 +1,6 @@
 <script lang="ts">
-	import '../app.css';
-	let { children } = $props();
+    import '../app.css';
+    let { children } = $props();
 </script>
 
 <nav class="bg-gray-800 p-4 shadow-md">
@@ -56,9 +56,9 @@
     </div>
 </nav>
 
-{@render children()}
-
-
+<main class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
+    {@render children()}
+</main>
 
 <style>
     :global(.dark) {
@@ -83,4 +83,3 @@
         background: linear-gradient(to right, #2d3748, #4a5568);
     }
 </style>
-

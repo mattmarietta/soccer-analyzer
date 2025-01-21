@@ -29,8 +29,9 @@ async function fetchPlayer() {
     <div>
         <label>
             Player:
-            <input type="text" bind:value={player} />
+            <input bind:value={player}/>
         </label>
+        <h1> Results for {player}:  </h1>
     </div>
     <button on:click={fetchPlayer}>Search</button>
 
@@ -42,6 +43,6 @@ async function fetchPlayer() {
             </div>
         {/each}
     {:else}
-        <p>No matches found</p>
+        <p>No players found</p>
     {/if}
 </div>

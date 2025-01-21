@@ -2,6 +2,7 @@
     // Javascript here
 </script>
 
+
 <style>
     .about-container {
         max-width: 800px;
@@ -38,6 +39,4 @@
     <p>
         Committed to providing accurate and up-to-date information to enhance your soccer experience. Thank you for choosing Soccer Analyzer!
     </p>
-
-    <a href="/">Home</a >
 </div>

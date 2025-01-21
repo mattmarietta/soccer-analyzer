@@ -2,7 +2,7 @@
     // Add any page-specific logic here if needed
 </script>
 
-<main class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
+<main class="flex flex-col items-center justify-center min-h-screen text-white">
     <h1 class="text-4xl font-bold mb-4 text-center">
         Welcome to <span class="text-green-400">Soccer Analyzer</span>
     </h1>
