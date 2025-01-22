@@ -22,7 +22,7 @@
     }
 </style>
 
-<div class="about-container">
+<div class="md:container md:mx-auto">
     <h1>About Soccer Analyzer</h1>
     <p>
         Welcome to Soccer Analyzer! This application provides in-depth analysis and insights into soccer matches, players, and teams. Whether you are a coach, player, or a passionate fan, these tools will help you understand the game better and make informed decisions.
