@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="js">
     import '../app.css';
     let { children } = $props();
 </script>
@@ -56,30 +56,6 @@
     </div>
 </nav>
 
-<main class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
+<main class="flex flex-col items-center justify-center  bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white">
     {@render children()}
 </main>
-
-<style>
-    :global(.dark) {
-        --bg-color: #1a202c;
-        --text-color: #a0aec0;
-    }
-
-    :global(body) {
-        background-color: var(--bg-color, white);
-        color: var(--text-color, black);
-    }
-
-    nav {
-        background-color: var(--bg-color, #2d3748);
-    }
-
-    a {
-        color: var(--text-color, white);
-    }
-
-    .bg-gradient {
-        background: linear-gradient(to right, #2d3748, #4a5568);
-    }
-</style>

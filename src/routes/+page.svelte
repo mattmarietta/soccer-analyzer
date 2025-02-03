@@ -2,12 +2,13 @@
     // Add any page-specific logic here if needed
 </script>
 
-<main class="flex flex-col items-center justify-center min-h-screen text-white">
+<main class="flex flex-col items-center justify-center text-white">
     <h1 class="text-4xl font-bold mb-4 text-center">
         Welcome to <span class="text-green-400">Soccer Analyzer</span>
     </h1>
-    <p class="text-lg mb-8 text-gray-300 text-center max-w-prose">
-        Analyze your favorite player, team performance, and match outcomes in a beautiful, user-friendly interface.
+    <p class="text-lg mb-8 text-gra
+    y-300 text-center max-w-prose">
+        Analyze youfsdfsr favorite player, team performance, and match outcomes in a beautiful, user-friendly interface.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
         <a

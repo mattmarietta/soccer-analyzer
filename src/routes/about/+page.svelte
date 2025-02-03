@@ -1,26 +1,3 @@
-<script>
-    // Javascript here
-</script>
-
-
-<style>
-    .about-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem;
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-    }
-</style>
 
 <div class="md:container md:mx-auto">
     <h1>About Soccer Analyzer</h1>
