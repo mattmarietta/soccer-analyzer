@@ -10,7 +10,7 @@
 		const response = await fetch("https://v3.football.api-sports.io/leagues?type=League&country=England", {
 			method: 'GET',
 			headers: {
-				'x-rapidapi-key': 'b6c2d05fc1ed96232d51e735dcbea82c'
+				'x-rapidapi-key': ''
 			}
 		});
 		const data = await response.json();
