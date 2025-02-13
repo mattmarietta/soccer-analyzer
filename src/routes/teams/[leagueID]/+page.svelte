@@ -30,7 +30,7 @@
 
         const response = await fetch(`https://v3.football.api-sports.io/teams?league=${leagueID}&season=2023`, {
             method: 'GET',
-            headers: { 'x-rapidapi-key': 'b6c2d05fc1ed96232d51e735dcbea82c' }
+            headers: { 'x-rapidapi-key': '' }
         });
 
         const data = await response.json();
