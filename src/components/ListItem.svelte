@@ -1,25 +1,27 @@
-<script>
-    export let title;
-    export let body;
-      export let imgUrl;
+<script lang="ts">
+    import { createEventDispatcher } from "svelte";
+
+    export let title: string;
+    export let body: string;
+    export let imgUrl: string;
+    export let leagueID: number;
+
+    const dispatch = createEventDispatcher<{ select: {id: number} }>();
+
+    //Needs to accept event where it is clicked now
+    function handleClick() {
+        //Emit a custom event with the league ID
+        dispatch("select", {id : leagueID});
+    }
   </script>
   
-  <div class="leagueItem">
-      <img src="{imgUrl}" alt="League Logo" class="leagueLogo"/>
-    <h2>{title}</h2>
-    <p>{body}</p>
-  </div>
-  
-  <style>
-    .leagueItem {
-      border: 1px solid #ddd;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-      .leagueLogo{
-          height: 100px;
-          width:auto;
-      }
-  </style>
+  <div 
+    class="flex items-center gap-4 p-4 border rounded-lg shadow-md cursor-pointer transition-transform transform hover:scale-105 hover:bg-gray-100"
+    on:click={handleClick}
+>
+    <img src="{imgUrl}" alt="League Logo" class="w-16 h-16 rounded-md" />
+    <div>
+        <h2 class="text-lg font-semibold">{title}</h2>
+        <p class="text-gray-600 text-sm">{body}</p>
+    </div>
+</div>
