@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { page } from "$app/stores"; 
+    import { page } from "$app/state"; 
     import { writable } from "svelte/store";
     import { goto } from "$app/navigation";
     import {get} from 'svelte/store';
@@ -17,12 +17,9 @@
     }
 
     let teams = writable<Team[]>([]);
-    let leagueID: string = "";
 
     // Get league ID from the URL
-    $page.subscribe(($p) => {
-        leagueID = $p.params.leagueID;
-    });
+    const leagueID = page.params.leagueID;
 
     // Fetch teams for the selected league
     onMount(async () => {
@@ -30,7 +27,7 @@
 
         const response = await fetch(`https://v3.football.api-sports.io/teams?league=${leagueID}&season=2023`, {
             method: 'GET',
-            headers: { 'x-rapidapi-key': '' }
+            headers: { 'x-rapidapi-key': '''' }
         });
 
         const data = await response.json();
@@ -44,13 +41,14 @@
 </script>
 
 <h1>Teams for League {leagueID}</h1>
-<div class="grid grid-cols-3 gap-2">
+<div class="overflow-x-auto grid grid-cols-3 gap-2">
     {#each $teams as team}
         <ListItem 
-            title={team.team.name}
-            body={team.team.country}
-            imgUrl={team.team.logo}
-            on:select={handleTeamSelect}
+        itemID = {team.team.id} 
+        title={team.team.name}
+        body={team.team.country}
+        imgUrl={team.team.logo}
+        on:select={handleTeamSelect}
         />
     {/each}
 </div>

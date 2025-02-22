@@ -8,22 +8,22 @@
     </h1>
     <p class="text-lg mb-8 text-gra
     y-300 text-center max-w-prose">
-        Analyze youfsdfsr favorite player, team performance, and match outcomes in a beautiful, user-friendly interface.
+        Analyze your favorite player, team performance, and match outcomes in a beautiful, user-friendly interface.
     </p>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
         <a
-            href="/players"
+            href="/countries"
             class="block p-6 bg-gray-700 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 text-center"
         >
-            <h2 class="text-2xl font-semibold">Players</h2>
-            <p class="mt-2 text-gray-200">Explore detailed player statistics and insights.</p>
+            <h2 class="text-2xl font-semibold">Search</h2>
+            <p class="mt-2 text-gray-200">Explore by looking at countries, leagues, teams, and players.</p>
         </a>
         <a
             href="/teams"
             class="block p-6 bg-gray-700 rounded-lg shadow-lg hover:bg-green-500 transition duration-300 text-center"
         >
-            <h2 class="text-2xl font-semibold">Teams</h2>
-            <p class="mt-2 text-gray-200">Compare team performance across matches and leagues.</p>
+            <h2 class="text-2xl font-semibold">Trivia</h2>
+            <p class="mt-2 text-gray-200">Try your luck and see if you can guess the correct player given statistics TBI.</p>
         </a>
         <a
             href="/matches"

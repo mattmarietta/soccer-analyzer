@@ -4,14 +4,14 @@
     export let title: string;
     export let body: string;
     export let imgUrl: string;
-    export let leagueID: number;
+    export let itemID: number;
 
     const dispatch = createEventDispatcher<{ select: {id: number} }>();
 
     //Needs to accept event where it is clicked now
     function handleClick() {
         //Emit a custom event with the league ID
-        dispatch("select", {id : leagueID});
+        dispatch("select", {id : itemID});
     }
   </script>
   
